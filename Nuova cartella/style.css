@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    min-width: max-content;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(4,9,30,0.7)),url("assets/E46-1.jpg");
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3vh 3vh;
+    align-items: center;
+    justify-content: space-between;
+}
+nav img {
+    width: 300px;
+}
+.nav-link{
+   flex: 1;
+   text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    content: none;
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    transition: 0.5s;
+}
+.nav-link ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.nav-link ul li a:hover{
+    color: #f44336;
+}
+
+.text-box {
+    width: 1800px;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: 17vh;
+}
+.text-box h1 {
+    font-size: 130px;
+    margin: 0.2em;
+}
+.text-box p {
+    font-size: 30px;
+    line-height: 1.5em;
+}
+.text-box button a {
+    text-decoration: none;
+    color: #fff;
+}
+.Cara-textbox h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.card-container {
+   display: flex;
+   padding: 10px;
+   justify-content: center;
+   
+}
+#card{
+    display: block;
+    width: 280px;
+    background-color: white, ;
+    box-shadow: 0 4px 8px 0 rgba(177, 6, 6, 0.33), 0 6px 20px 0 rgba(177, 6, 6, 0.33);
+    margin: 50px;
+    
+    
+  }
+  
+#card img {
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 280px;
+    min-width: 280px;
+    
+}
+#card-text {
+    text-align: center;
+    padding: 10px 20px;
+   
+  }
+
+#card:hover {
+    box-shadow: 0 4px 8px 0 rgba(7, 189, 221, 0.415), 0 6px 20px 0 rgba(7, 189, 221, 0.415);
+}
+.Prestazioni h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.tabella {
+   margin-left: 600px;
+}
+.tabella td,th {
+    padding-right: 400px;
+    padding-bottom: 20px;
+}
+tr:nth-child(even) {
+    background-color:#f2f2f2;
+    ;
+    
+}
